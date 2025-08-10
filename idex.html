@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MVRS Talks</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>MVRS Talks</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Posts</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+    <button id="toggle-theme">Dark Mode</button>
+  </header>
+
+  <main>
+    <input type="text" id="search" placeholder="Search posts..." />
+
+    <section class="post">
+      <h2>Welcome to MVRS Talks</h2>
+      <p>This is a sample post. Hover over links and buttons to see effects!</p>
+      <button onclick="readMore()">Read More</button>
+      <div class="comments">
+        <h4>Leave a comment:</h4>
+        <textarea placeholder="Write your comment here..."></textarea>
+        <button class="comment-btn">Post Comment</button>
+      </div>
+    </section>
+
+    <section class="post">
+      <h2>Another Blog Title</h2>
+      <p>Second blog post content goes here. Enjoy reading!</p>
+      <button onclick="readMore()">Read More</button>
+      <div class="comments">
+        <h4>Leave a comment:</h4>
+        <textarea placeholder="Write your comment here..."></textarea>
+        <button class="comment-btn">Post Comment</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 My Blog. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

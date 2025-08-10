@@ -1,0 +1,132 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: white;
+  color: black;
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark {
+  background-color: #121212;
+  color: white;
+}
+
+header {
+  background-color: #004aad;
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #fec70b;
+}
+
+#toggle-theme {
+  background: white;
+  color: #004aad;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+#toggle-theme:hover {
+  background: black;
+  color: white;
+}
+
+main {
+  padding: 40px;
+}
+
+#search {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  border: 2px solid #004aad;
+  border-radius: 5px;
+}
+
+.post {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+button {
+  background-color: #004aad;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.05);
+}
+
+.comments {
+  margin-top: 20px;
+}
+
+.comments textarea {
+  width: 100%;
+  height: 60px;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+.comment-btn {
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #004aad;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+body.dark header,
+body.dark footer {
+  background-color: #1e1e1e;
+}
